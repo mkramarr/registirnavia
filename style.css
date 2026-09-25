@@ -339,6 +339,63 @@ nav a:hover {
 
 /* CARDS */
 
+/* TEAM */
+
+.team {
+    background: #ffffff;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.team-heading h2 {
+    max-width: 520px;
+
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 0.98;
+    letter-spacing: -3px;
+    font-weight: 800;
+}
+
+.team-heading h2 span {
+    color: #163f8f;
+}
+
+.team-member {
+    max-width: 620px;
+    padding-top: 10px;
+}
+
+.team-role {
+    margin-bottom: 15px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #888888;
+}
+
+.team-member h3 {
+    margin-bottom: 25px;
+
+    font-size: 34px;
+    line-height: 1.1;
+}
+
+.team-description {
+    max-width: 560px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #666666;
+}
+
 /* TRAINING */
 
 .training {
@@ -438,8 +495,6 @@ nav a:hover {
 
 /* EVENTS */
 
-/* EVENTS */
-
 .events {
     background: #ffffff;
 }
@@ -453,6 +508,7 @@ nav a:hover {
 
 .events h2 {
     max-width: 600px;
+
     font-size: clamp(48px, 6vw, 76px);
     line-height: 0.98;
     letter-spacing: -3px;
@@ -465,8 +521,10 @@ nav a:hover {
 
 .events-intro {
     max-width: 420px;
+
     font-size: 17px;
     line-height: 1.7;
+
     color: #666666;
 }
 
@@ -477,7 +535,7 @@ nav a:hover {
 
 .event-item {
     display: grid;
-    grid-template-columns: 80px 1fr 50px;
+    grid-template-columns: 60px 1fr 70px;
     gap: 30px;
     align-items: center;
 
@@ -494,8 +552,9 @@ nav a:hover {
 
 .event-number {
     font-size: 13px;
-    color: #163f8f;
     font-weight: 700;
+
+    color: #163f8f;
 }
 
 .event-label {
@@ -504,28 +563,32 @@ nav a:hover {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 2px;
+
     color: #888888;
 }
 
 .event-content h3 {
     margin-bottom: 10px;
-    font-size: 26px;
+
+    font-size: 25px;
+    line-height: 1.2;
 }
 
 .event-content > p {
     max-width: 650px;
+
     color: #666666;
     line-height: 1.6;
 }
 
-.event-arrow {
-    font-size: 24px;
+.event-year {
+    font-size: 14px;
+    font-weight: 700;
+
     color: #163f8f;
+
     text-align: right;
 }
-
-
-/* CONTACT */
 
 /* CONTACT */
 
@@ -705,6 +768,19 @@ footer {
         gap: 50px;
     }
 
+        .team-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .team-heading h2 {
+        letter-spacing: -2px;
+    }
+
+    .team-member h3 {
+        font-size: 28px;
+    }
+
     .about-heading h2 {
         letter-spacing: -2px;
     }
@@ -808,14 +884,18 @@ footer {
         margin-top: 50px;
     }
 
-    .event-item {
-        grid-template-columns: 45px 1fr;
+        .event-item {
+        grid-template-columns: 40px 1fr;
         gap: 15px;
         padding: 30px 0;
     }
 
-    .event-arrow {
+    .event-year {
         display: none;
+    }
+
+    .event-content h3 {
+        font-size: 22px;
     }
 
     .event-content h3 {
