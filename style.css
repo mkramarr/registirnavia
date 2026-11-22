@@ -181,29 +181,6 @@ nav a:hover {
 
 /* BADGE */
 
-.hero-badge {
-    position: absolute;
-    bottom: 55px;
-    left: 20px;
-
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    padding: 14px 20px;
-
-    background: white;
-
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
-
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.hero-badge strong {
-    color: #163f8f;
-    font-size: 20px;
-}
 
 
 /* BUTTONS */
@@ -268,6 +245,144 @@ nav a:hover {
 
 /* ABOUT */
 
+/* UPCOMING EVENT */
+
+.upcoming-event {
+    background: #ffffff;
+}
+
+.upcoming-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+    gap: 45px;
+    align-items: center;
+
+    padding: 50px;
+
+    background: #111111;
+    color: #ffffff;
+}
+
+.upcoming-main {
+    min-width: 0;
+}
+
+.upcoming-event .eyebrow {
+    color: #8ea8df;
+}
+
+.upcoming-organizer {
+    margin-top: 28px;
+    margin-bottom: 15px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+}
+
+.upcoming-event h2 {
+    max-width: 600px;
+
+    font-size: clamp(48px, 5.5vw, 72px);
+    line-height: 0.95;
+    letter-spacing: -3px;
+    font-weight: 800;
+}
+
+.upcoming-event h2 span {
+    display: block;
+    color: #4e73bd;
+}
+
+.upcoming-description {
+    max-width: 520px;
+    margin-top: 22px;
+
+    font-size: 16px;
+    line-height: 1.7;
+    color: #bbbbbb;
+}
+
+
+/* EVENT DETAILS */
+
+.upcoming-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 25px;
+
+    margin-top: 30px;
+    padding-top: 25px;
+
+    border-top: 1px solid #444444;
+}
+
+.upcoming-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.upcoming-detail span {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #8ea8df;
+}
+
+.upcoming-detail strong {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.upcoming-detail.full,
+.upcoming-note {
+    grid-column: 1 / -1;
+}
+
+.upcoming-note {
+    margin-top: 0;
+
+    font-size: 12px;
+    line-height: 1.6;
+    color: #999999;
+}
+
+.upcoming-button {
+    margin-top: 28px;
+    background: #ffffff;
+    color: #111111;
+}
+
+.upcoming-button:hover {
+    background: #163f8f;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* EVENT POSTER */
+
+.upcoming-poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upcoming-poster img {
+    display: block;
+
+    width: 100%;
+    max-width: 365px;
+    max-height: 540px;
+
+    height: auto;
+    object-fit: contain;
+
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
+}
 .about {
     background: #ffffff;
 }
@@ -340,6 +455,224 @@ nav a:hover {
 /* CARDS */
 
 /* TEAM */
+
+/* MISSION & VISION */
+
+.purpose {
+    background: #f5f5f3;
+}
+
+.purpose-heading {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 25px 80px;
+    align-items: end;
+
+    margin-bottom: 55px;
+}
+
+.purpose-heading .eyebrow {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
+.purpose-heading h2 {
+    grid-column: 1;
+
+    max-width: 580px;
+
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 0.98;
+    letter-spacing: -3px;
+    font-weight: 800;
+}
+
+.purpose-heading h2 span {
+    display: block;
+    color: #163f8f;
+}
+
+.purpose-intro {
+    grid-column: 2;
+    grid-row: 2;
+
+    max-width: 440px;
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.purpose-card {
+    min-height: 320px;
+    padding: 38px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.purpose-card-dark {
+    background: #111111;
+    border-color: #111111;
+    color: #ffffff;
+}
+
+.purpose-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purpose-number {
+    font-size: 13px;
+    font-weight: 700;
+    color: #163f8f;
+}
+
+.purpose-card-dark .purpose-number {
+    color: #8ea8df;
+}
+
+.purpose-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #888888;
+}
+
+.purpose-card h3 {
+    max-width: 430px;
+
+    margin-top: auto;
+    margin-bottom: 18px;
+
+    font-size: 30px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.purpose-card > p {
+    max-width: 520px;
+
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+.purpose-card-dark > p {
+    color: #bbbbbb;
+}
+
+/* MISSION & VISION */
+
+.purpose {
+    background: #f5f5f3;
+}
+
+.purpose-heading {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+.purpose-heading h2 {
+    max-width: 700px;
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 0.98;
+    letter-spacing: -3px;
+    font-weight: 800;
+}
+
+.purpose-heading h2 span {
+    color: #163f8f;
+}
+
+.purpose-intro {
+    max-width: 620px;
+    margin-top: 25px;
+
+    font-size: 18px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.purpose-card {
+    min-height: 320px;
+    padding: 38px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.purpose-card-dark {
+    background: #111111;
+    border-color: #111111;
+    color: #ffffff;
+}
+
+.purpose-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purpose-number {
+    font-size: 13px;
+    font-weight: 700;
+    color: #163f8f;
+}
+
+.purpose-card-dark .purpose-number {
+    color: #8ea8df;
+}
+
+.purpose-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #888888;
+}
+
+.purpose-card h3 {
+    margin-top: auto;
+    margin-bottom: 18px;
+
+    max-width: 430px;
+
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.purpose-card > p {
+    max-width: 520px;
+
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+.purpose-card-dark > p {
+    color: #bbbbbb;
+}
 
 .team {
     background: #ffffff;
@@ -768,6 +1101,32 @@ footer {
         gap: 50px;
     }
 
+        .purpose-heading {
+        margin-bottom: 35px;
+    }
+
+    .purpose-heading h2 {
+        letter-spacing: -2px;
+    }
+
+    .purpose-intro {
+        font-size: 16px;
+    }
+
+    .purpose-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .purpose-card {
+        min-height: 280px;
+        padding: 30px;
+    }
+
+    .purpose-card h3 {
+        margin-top: 55px;
+        font-size: 27px;
+    }
+
         .team-grid {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -791,30 +1150,25 @@ footer {
     }
 
     .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+      grid-template-columns: 1fr;
+      gap: 0;
     }
 
     .hero-content {
-        padding: 70px 0 30px;
+       padding: 70px 0 10px;
     }
 
     .hero-visual {
-        min-height: 350px;
-        padding-bottom: 70px;
+       min-height: 320px;
+       padding-bottom: 35px;
+       margin-top: -10px;
     }
 
     .chess-decoration {
-        width: 300px;
-        height: 300px;
+    width: 200px;
+    height: 200px;
     }
 
-    .hero-badge {
-        bottom: 35px;
-        left: 50%;
-        transform: translateX(-50%);
-        white-space: nowrap;
-    }
 
     nav {
         display: none;
@@ -940,4 +1294,55 @@ footer {
         align-items: flex-start;
         gap: 10px;
     }
-}
+    .upcoming-card {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 30px;
+    }
+
+    .upcoming-event h2 {
+    letter-spacing: -2px;
+    }
+
+    .upcoming-details {
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0;
+    padding-top: 25px;
+    border-left: none;
+    border-top: 1px solid #444444;
+    }
+
+    .purpose-heading {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-bottom: 35px;
+    }
+
+    .purpose-heading .eyebrow,
+    .purpose-heading h2,
+    .purpose-intro {
+        grid-column: 1;
+    }
+
+    .purpose-heading h2 {
+        letter-spacing: -2px;
+    }
+
+    .purpose-intro {
+        grid-row: auto;
+        font-size: 16px;
+    }
+
+    .purpose-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .purpose-card {
+        min-height: 280px;
+        padding: 30px;
+    }
+
+    .purpose-card h3 {
+        margin-top: 55px;
+        font-size: 27px;
+    }
